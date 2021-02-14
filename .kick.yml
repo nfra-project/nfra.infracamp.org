@@ -1,0 +1,13 @@
+# Kickstart container config file - see https://gitub.com/infracamp/kickstart
+# Run ./kickstart.sh to start a development-container for this project
+version: 1
+from: "infracamp/kickstart-flavor-jekyll"
+command:
+  build:
+    - "sudo chmod 777 /var/www/html"
+    - "git submodule update --init --remote"
+    - "jekyll build -s /opt/docs -d /var/www/html"
+
+  run:
+  dev:
+    - "D:jekyll build -s /opt/docs -d /var/www/html --watch --force_polling --drafts"

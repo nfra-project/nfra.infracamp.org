@@ -1,0 +1,32 @@
+
+<nav class="navbar navbar-light border" style="background-color: #e3f2fd;">
+    <div class="container">
+        <div class="input-group shadow-sm">
+            <div class="input-group-prepend">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Install kickstart</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Install kickstart</a>
+                    <!--div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Workspace Setup Debain/Ubuntu</a>
+                    <a class="dropdown-item" href="#">Workspace Setup MacOS</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Setup a rudl cluster</a-->
+                </div>
+            </div>
+            <input type="text" id="kick_text" class="form-control" readonly value="sudo curl -o /usr/bin/kickstart 'https://raw.githubusercontent.com/nfra-project/nfra-kickstart/master/dist/kickstart.sh' && sudo chmod +x /usr/bin/kickstart">
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="button" onclick="$('#kick_text').select();document.execCommand('copy');" title="Copy to clipboard">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="button" id="button-addon2">
+                    <i class="fas fa-question"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+

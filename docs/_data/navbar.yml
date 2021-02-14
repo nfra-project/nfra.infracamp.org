@@ -1,0 +1,17 @@
+
+brand_src: "/assets/infracamp.png"
+brand_name: "nfra-project"
+brand_href: "/"
+
+main:
+  - name: "Home"
+    href: "/"
+  - name: "Projects"
+    href: "/projects"
+
+#  - name: "Getting started"
+#    href: "/getting-started/"
+#  - name: "Projects"
+#    href: /project/
+
+

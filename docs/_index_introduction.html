@@ -1,0 +1,68 @@
+<div class="container mt-5">
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="list-group" role="tablist">
+                <a href="#list-setup" class="list-group-item list-group-item-action active" id="nav-list-setup" data-toggle="list" role="tab">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Workstation setup</h5>
+                    </div>
+                    <p class="mb-1">
+                        Install required software.
+                    </p>
+                    <small class="text-muted">Linux, MacOS, Windows,...</small>
+                </a>
+                <a href="#list-develop" class="list-group-item list-group-item-action" id="nav-list-develop" data-toggle="list" role="tab">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Develop</h5>
+                    </div>
+                    <p class="mb-1">
+                        Container for development. Tools & best practise.
+                    </p>
+                    <small><b>SDKs:</b> php,node.js,python,c/c++,..</small>
+                </a>
+                <a href="#list-build" class="list-group-item list-group-item-action" id="nav-list-build" data-toggle="list" role="tab">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Test & Build</h5>
+                    </div>
+                    <p class="mb-1">
+                        The project build / run configuration.
+                    </p>
+                    <small class="text-muted">.kick.yml, Dockerfile</small>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-9">
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade markdown-body show active" id="list-setup" role="tabpanel" aria-labelledby="nav-list-setup">
+                    {% capture myInclude %}
+                    {% include_relative _ref_setup.md %}
+                    {% endcapture %}
+                    {{ myInclude | markdownify }}
+                </div>
+                <div class="tab-pane fade markdown-body  " id="list-develop" role="tabpanel" aria-labelledby="nav-list-develop">
+                    {% capture myInclude %}
+                    {% include_relative _ref_develop.md %}
+                    {% endcapture %}
+                    {{ myInclude | markdownify }}
+                </div>
+
+                <div class="tab-pane fade markdown-body" id="list-build" role="tabpanel" aria-labelledby="nav-list-build">
+                    {% capture myInclude %}
+                    {% include_relative _ref_testnbuild.md %}
+                    {% endcapture %}
+                    {{ myInclude | markdownify }}
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
