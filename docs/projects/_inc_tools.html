@@ -7,7 +7,7 @@
     <tbody>
     {% for item in site.data.projects.tools %}
     <tr>
-        <td><a href="https://github.com/nfra-project/{{item.name}}/blob/master/README.md"><code><b>{{item.name}}</b></code></a></td>
+        <td><a href="{{item.name}}"><code><b>{{item.name}}</b></code></a></td>
         <td>{{item.desc}}</td>
         <td style="text-align: right">
             <a target="_blank" href="https://github.com/nfra-project/{{item.name}}/actions"><img src="https://github.com/nfra-project/{{item.name}}/workflows/{{item.workflow}}/badge.svg"></a>

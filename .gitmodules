@@ -1,0 +1,15 @@
+[submodule "doc/projects/kickstart-flavor-php"]
+	path = doc/projects/kickstart-flavor-php
+	url = https://github.com/nfra-project/kickstart-flavor-php.git
+[submodule "docs/projects/kickstart-flavor-php"]
+	path = docs/projects/kickstart-flavor-php
+	url = https://github.com/nfra-project/kickstart-flavor-php.git
+[submodule "docs/projects/kickstart-container-kit"]
+	path = docs/projects/kickstart-container-kit
+	url = https://github.com/nfra-project/kickstart-container-kit.git
+[submodule "docs/projects/nfra-kickstart"]
+	path = docs/projects/nfra-kickstart
+	url = https://github.com/nfra-project/nfra-kickstart.git
+[submodule "docs/projects/nfra-kicker"]
+	path = docs/projects/nfra-kicker
+	url = https://github.com/nfra-project/nfra-kicker.git

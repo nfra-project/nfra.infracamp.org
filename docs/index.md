@@ -1,5 +1,5 @@
 ---
-title: "kickstart.sh: zero-conf sdk for agile software development"
+title: "kickstart: zero-conf sdk for agile software development"
 layout: default-fullsize
 description: |
     Zero-conf container development in action for php, pyhton, node.js, c++. Setup guide for github, 

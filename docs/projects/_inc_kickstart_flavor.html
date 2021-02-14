@@ -5,7 +5,7 @@
     </tr>
     {% for item in site.data.projects.kickstart_flavor_x86 %}
     <tr>
-        <td><a target="_blank" href="https://github.com/{{item.gh}}"><code><b>{{item.name}}</b></code></a></td>
+        <td><a target="_blank" href="{{item.name}}/"><code><b>{{item.name}}</b></code></a></td>
         <td>{{item.desc}}</td>
         <td style="text-align: right">
             <a target="_blank" href="https://github.com/{{item.gh}}/actions"><img src="https://github.com/{{item.gh}}/workflows/{{item.workflow}}/badge.svg"></a>

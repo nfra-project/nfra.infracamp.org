@@ -8,7 +8,9 @@ main:
     href: "/"
   - name: "Projects"
     href: "/projects"
-
+right:
+  - icon: "fab fa-github"
+    href: "http://github.com/nfra-project"
 #  - name: "Getting started"
 #    href: "/getting-started/"
 #  - name: "Projects"

@@ -9,13 +9,15 @@ kickstart_flavor_x86:
   - name: kickstart-container-kit
     dh: nfra/kickstart-ckit
     gh: nfra-project/kickstart-container-kit
-    workflow: test
+    workflow: tests
     desc: Base Container for Kickstart
 
 
 kickstart_flavor_arm32:
   - name: kickstart-flavor-php
     dh: nfra/kickstart-flavor-php
+    gh: nfra-project/kickstart-flavor-php
+    workflow: test
     desc: PHP8, Apache2
 
 tools:
