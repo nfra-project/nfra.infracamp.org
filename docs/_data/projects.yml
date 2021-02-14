@@ -1,5 +1,11 @@
 
 kickstart_flavor_x86:
+  - name: kickstart-flavor-bare
+    dh: nfra/kickstart-flavor-bare
+    gh: nfra-project/kickstart-flavor-bare
+    workflow: test
+    desc: Bare container with no preinstalled software
+
   - name: kickstart-flavor-php
     dh: nfra/kickstart-flavor-php
     gh: nfra-project/kickstart-flavor-php
@@ -14,6 +20,12 @@ kickstart_flavor_x86:
 
 
 kickstart_flavor_arm32:
+  - name: kickstart-flavor-bare
+    dh: nfra/kickstart-flavor-bare
+    gh: nfra-project/kickstart-flavor-bare
+    workflow: test
+    desc: Bare container with no preinstalled software
+
   - name: kickstart-flavor-php
     dh: nfra/kickstart-flavor-php
     gh: nfra-project/kickstart-flavor-php
