@@ -4,10 +4,12 @@ brand_name: "nfra-project"
 brand_href: "/"
 
 main:
-  - name: "Home"
+  - name: "Getting Started"
     href: "/"
   - name: "Projects"
     href: "/projects"
+  - name: "Status"
+    href: "/status"
 right:
   - icon: "fab fa-github"
     href: "http://github.com/nfra-project"
