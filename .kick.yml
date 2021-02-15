@@ -1,5 +1,5 @@
-# Kickstart container config file - see https://gitub.com/infracamp/kickstart
-# Run ./kickstart.sh to start a development-container for this project
+# Kickstart container config file - see https://nfra.infracamp.org
+# Run kickstart to start a development-container for this project
 version: 1
 from: "infracamp/kickstart-flavor-jekyll"
 command:
