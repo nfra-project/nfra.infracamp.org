@@ -18,6 +18,9 @@ This document assumes you have your project located in drive `C:`.
 - [Activated Windows Subsystem for Linux (WSL)](https://code.visualstudio.com/remote-tutorials/wsl/enable-wsl) 
 - [Installed Ubuntu for Windows](https://ubuntu.com/tutorials/tutorial-ubuntu-on-windows#3-install-ubuntu-for-windows-10)
 
+#### Additional
+- [Running Phpstorm "in" WSL2 and starting docker containers](https://github.com/lackovic/notes/tree/master/Windows/Windows%20Subsystem%20for%20Linux#install-intellij-idea)
+
 ### Required Options in Docker for Windows
 - Open Docker for Windows settings
     - Expose docker deamon
@@ -25,13 +28,6 @@ This document assumes you have your project located in drive `C:`.
         2. To expose the docker deamon enable the marked option in the picture below
         ![docker deamon expose](docker-deamon.png)
     
-    - Enable fileshare in docker
-        1. Go to `Resources` open the Subsetting `File Sharing`
-        2. Mark all windows drives you want to share with docker like in the image shown below
-        ![docker fileshare](docker-fileshare.png)
-
-
-
 
 
 ### Configure the ubuntu shell
