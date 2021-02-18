@@ -44,7 +44,7 @@ Keeping the container configuration inside <kbd>.kick.yml</kbd> helps reducing y
 <kbd>Dockerfile</kbd> to only a few lines:
 
 ```dockerfile
-FROM infracamp/kickstart-flavor-base:testing
+FROM nfra/kickstart-flavor-bare:1.0
 ENV DEV_CONTAINER_NAME="your-project-name"
 
 ADD / /opt
