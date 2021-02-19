@@ -60,14 +60,14 @@ ENTRYPOINT ["/kickstart/run/entrypoint.sh", "standalone"]
 ## Run additional services in stack
 
 To run additional services, just create a docker-compose like stack
-file named `kick-stack.yml` in your projects root directory.
+file named `.kick-stack.yml` in your projects root directory.
 
 <kbd>kickstart</kbd> will automatically create a new network with
 the name of your current project. Make sure to adjust the names
 in your stack file:
 
 
-***`kick-stack.yml`***
+***`.kick-stack.yml`***
 ```yaml
 version: "3"
 services:
