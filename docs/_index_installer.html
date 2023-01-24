@@ -13,7 +13,7 @@
                     <a class="dropdown-item" href="#">Setup a rudl cluster</a-->
                 </div>
             </div>
-            <input type="text" id="kick_text" class="form-control" readonly value="sudo curl -o /usr/bin/kickstart 'https://raw.githubusercontent.com/nfra-project/nfra-kickstart/master/dist/kickstart.sh' && sudo chmod +x /usr/bin/kickstart">
+            <input type="text" id="kick_text" class="form-control" readonly value="sudo curl -o /usr/local/bin/kickstart 'https://raw.githubusercontent.com/nfra-project/nfra-kickstart/master/dist/kickstart.sh' && sudo chmod +x /usr/local/bin/kickstart">
             <div class="input-group-append">
                 <button class="btn btn-secondary" type="button" onclick="$('#kick_text').select();document.execCommand('copy');" title="Copy to clipboard">
                     <i class="fas fa-copy"></i>
