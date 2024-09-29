@@ -83,6 +83,7 @@ latest:
     - ./kickstart ci-build
   only:
     - master
+    - main
 ```
 
 This will execute the unit-tests defined in <kbd>command > test</kbd>-section 
