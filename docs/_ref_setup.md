@@ -5,7 +5,7 @@ most linux distributions.
 
 ## Setup your workstation <small>on Debain/Ubuntu, [klick here for Windows / MacOS](setup/)</small>
 
-[Yubikey (Fido2) Setup](/setup/yubikey)
+[SSH Agent / Yubikey (Fido2) Setup](/setup/yubikey)
 
 Logged in with your regular user account (not root), open a terminal and execute:
 
@@ -29,14 +29,14 @@ title="Store credentials to ~/.git-credentials"
 title="We suggest this flat directory as root for all of your projects"
 >mkdir -p $HOME/Projects</code>
 <code data-toggle="tooltip" data-placement="left" 
-title="Create a ssh key to access git repositories. Select a good password. You'll have to type it whenever you push/pull."
->ssh-keygen -t ed25519 && cat $HOME/.ssh/id_ed25519.pub</code>
+title="Create a FIDO2 ssh key to access git repositories. Select a good password. You'll have to type it whenever you push/pull."
+>ssh-keygen -t ed25519-sk && cat $HOME/.ssh/id_ed25519-sk.pub</code>
 </pre>
 
 The last command will print your *public ssh key*:
 
 ```
-ssh-ed25519 AAA..............some..more..chars...........J3jAPTge jondoe@example
+ssh-ed25519-sk AAA..............some..more..chars...........J3jAPTge jondoe@example
 ```
 
 Copy-n-paste the whole line and add it to your favorite development platform:
