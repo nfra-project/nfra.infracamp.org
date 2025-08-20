@@ -5,6 +5,8 @@ most linux distributions.
 
 ## Setup your workstation <small>on Debain/Ubuntu, [klick here for Windows / MacOS](setup/)</small>
 
+[Yubikey (Fido2) Setup](/setup/yubikey)
+
 Logged in with your regular user account (not root), open a terminal and execute:
 
 <pre>
