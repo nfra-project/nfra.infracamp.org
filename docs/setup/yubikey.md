@@ -26,7 +26,11 @@ if [ ! -S "$SOCK" ]; then
   done
 fi
 export SSH_AUTH_SOCK="$SOCK"
-``
+```
+
+Dies fügt alle Schlüssel beim ersten Start der Bash hinzu, so dass diese später
+über den Agent und in allen Containern direkt über den Agent genutzt werden können (ohne
+dass die Keys im Container liegen müssen).
 
 
 ## SSH Keys anzeigen:
