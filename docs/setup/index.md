@@ -6,4 +6,4 @@ description: |
 
 # Configuration Instructions
 
-- [Windows10](/setup/windows10.html)
+- [Windows 10](/setup/windows10)
