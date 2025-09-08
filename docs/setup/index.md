@@ -15,7 +15,8 @@ This document assumes you have your project located in drive `C:`.
 
 ### Requirements
 - Installed [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
-- [Activated Windows Subsystem 2 for Linux (WSL2)](https://learn.microsoft.com/de-de/windows/wsl/install) 
+- [Activated Windows Subsystem 2 for Linux (WSL2)](https://learn.microsoft.com/de-de/windows/wsl/install)
+    - Upgrade from WSL 1 to 2: `wsl --set-version Ubuntu 2`
 - [Installed Ubuntu for Windows](https://ubuntu.com/tutorials/tutorial-ubuntu-on-windows#3-install-ubuntu-for-windows-10)
 
 #### Additional
