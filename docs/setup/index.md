@@ -7,3 +7,4 @@ description: |
 # Configuration Instructions
 
 - [Windows 10](/setup/windows10)
+- [Windows 11](/setup/windows11)
