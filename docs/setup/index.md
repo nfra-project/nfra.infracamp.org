@@ -15,7 +15,7 @@ This document assumes you have your project located in drive `C:`.
 
 ### Requirements
 - Installed [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
-- [Activated Windows Subsystem for Linux (WSL)](https://code.visualstudio.com/remote-tutorials/wsl/enable-wsl) 
+- [Activated Windows Subsystem 2 for Linux (WSL2)](https://learn.microsoft.com/de-de/windows/wsl/install) 
 - [Installed Ubuntu for Windows](https://ubuntu.com/tutorials/tutorial-ubuntu-on-windows#3-install-ubuntu-for-windows-10)
 
 #### Additional
@@ -28,6 +28,16 @@ This document assumes you have your project located in drive `C:`.
         2. To expose the docker deamon enable the marked option in the picture below
         ![docker deamon expose](docker-deamon.png)
     
+- Enabel Windows WSL2 Mirrored Networking: (damit Zugriff auf localhost funktioniert)
+    - `wsl --update`
+    - `wsl --shutdown`
+    - Im Benutzerverzeichnis eine Datei `.wslconfig` anlegen mit folgendem Inhalt:
+      ```
+      [wsl2]
+      networkingMode=mirrored
+      ```
+       
+
 
 
 ### Configure the ubuntu shell
