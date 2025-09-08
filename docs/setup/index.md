@@ -1,5 +1,5 @@
 ---
-title: Kickstart Windows Setup
+title: Kickstart Setup
 description: |
     How to setup docker for windows and kickstart on windows 10
 ---
