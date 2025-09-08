@@ -26,17 +26,17 @@ This document assumes you have your project located in drive `C:`.
 - Open Docker for Windows settings
     - Expose docker deamon
         1. Go to `General` settings
-        2. To expose the docker deamon enable the marked option in the picture below
-        ![docker deamon expose](docker-deamon.png)
-    
+        2. To expose the docker deamon enable the marked option in the picture below and also check the option "Use the WSL based engine"
+        ![docker deamon expose](docker-settings-general.png)
+       
+
+
 - Enable Windows WSL2 Mirrored Networking: (damit Zugriff auf localhost funktioniert)
-    - `wsl --update`
-    - `wsl --shutdown`
-    - Im Benutzerverzeichnis eine Datei `~/.wslconfig` anlegen mit folgendem Inhalt:
-      ```
-      [wsl2]
-      networkingMode=mirrored
-      ```
+    - shutdonw current wsl-service using `wsl --shutdown` in the terminal/powershell
+    - search for "WSL Settings" in Windows and make sure the Networking mode is set to "mirrored
+    ![networking mode mirrored](wsl-settings-networking-mode-mirrored.png)
+    - Restart the WSL using wsl in the terminal/powershell
+    - type 'wslinfo --networking-mode' and make sure the output is "mirrored"
        
 
 
@@ -90,3 +90,20 @@ Go back to [getting started guide](../) and follow the instructions.
   Kickstart normally requires ports 80,4000,4100,4200 not to be
   assigned already. Use `netstat -ab` on the windows shell to 
   investigate the programs using these ports.
+
+- **kickstart complaing about `docker pull "$FROM_IMAGE"` failing**
+  >Error: KICKSTART ERROR: 'docker pull "$FROM_IMAGE"' (Exit code: 1 on kickstart line 590) - inspect output above for more information.
+  
+  This points to a file format issue. Since you are running these commands inside a WSL (Windows Subsystem for Linux) environment, it is very common for files edited on the Windows side to have Windows-style line endings (CRLF or \r\n), which cause these exact kinds of problems in Linux/bash scripts.
+
+  *Solution:* 
+  Using bash in the wsl/ubuntu shell, run
+  ```bash
+  sudo apt-get update
+  sudo apt-get install dos2unix
+
+  # After installation run:
+  dos2unix ./kickstart
+  dos2unix ./.kick.yml
+  ``` 
+  This will ensure both are in the correct format.
