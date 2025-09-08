@@ -31,7 +31,7 @@ This document assumes you have your project located in drive `C:`.
 - Enabel Windows WSL2 Mirrored Networking: (damit Zugriff auf localhost funktioniert)
     - `wsl --update`
     - `wsl --shutdown`
-    - Im Benutzerverzeichnis eine Datei `~\.wslconfig` anlegen mit folgendem Inhalt:
+    - Im Benutzerverzeichnis eine Datei `~/.wslconfig` anlegen mit folgendem Inhalt:
       ```
       [wsl2]
       networkingMode=mirrored
