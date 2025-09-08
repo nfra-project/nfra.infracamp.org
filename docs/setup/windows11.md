@@ -32,7 +32,7 @@ This document assumes you have your project located in drive `C:`.
 
 
 - Enable Windows WSL2 Mirrored Networking: (damit Zugriff auf localhost funktioniert)
-    - shutdonw current wsl-service using `wsl --shutdown` in the terminal/powershell
+    - shutdown current wsl-service using `wsl --shutdown` in the terminal/powershell
     - search for "WSL Settings" in Windows and make sure the Networking mode is set to "mirrored
     ![networking mode mirrored](wsl-settings-networking-mode-mirrored.png)
     - Restart the WSL using wsl in the terminal/powershell
