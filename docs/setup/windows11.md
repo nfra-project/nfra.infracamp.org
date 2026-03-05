@@ -66,7 +66,7 @@ This document assumes you have your project located in drive `C:`.
     sudo apt install docker.io
     ```
     **Warning:** `echo "export DOCKER_HOST=tcp://0.0.0.0:2375" >> ~/.kickstartconfig
-    echo "export KICKSTART_WIN_PATH=C:/" >> ~/.kickstartconfig*`is no more reliable for windows. WSL does path mapping itself! Do no more use KICKSTART_WIN_PATH!
+    echo "export KICKSTART_WIN_PATH=C:/" >> ~/.kickstartconfig*`is no more reliable for windows. WSL does path mapping itself! Do no more use KICKSTART_WIN_PATH and do not overwrite DOCKER_HOST!
 
 **Done**
 
