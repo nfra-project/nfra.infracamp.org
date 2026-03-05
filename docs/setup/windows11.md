@@ -63,6 +63,17 @@ This document assumes you have your project located in drive `C:`.
 Go back to [getting started guide](../) and follow the instructions.
 
 
+### Check out Project (Reload on FileChange)
+
+To have vite / webpack recognize file cnages (--watch - mode) it is mandatory to checkout
+projects directly in wsl (instead of Windows).
+
+This is because Windows files are mounted into wsl without file update notifiers.
+
+So clone projects directly inside the WSL: `/home/user/xyz` instead of `/mnt/c/...`. The
+IDE should recognize the path (tested with IntelliJ)
+
+
 ## Frequent problems / solutions:
 
 - **Kickstart complains about `/opt` beeing empty**
