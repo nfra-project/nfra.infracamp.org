@@ -13,6 +13,8 @@ This document covers
 
 This document assumes you have your project located in drive `C:`.
 
+**Update 2026/03/03:** no .kickstartconfig is required anymore. Device Mapping and localhost Network schould work out of the box.
+
 ### Requirements
 - Installed [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
 - [Activated Windows Subsystem 2 for Linux (WSL2)](https://learn.microsoft.com/de-de/windows/wsl/install)
@@ -27,14 +29,7 @@ This document assumes you have your project located in drive `C:`.
 - Enable Windows WSL2 Mirrored Networking: (damit Zugriff auf localhost funktioniert)
     - `wsl --update`
     - `wsl --shutdown`
-    - Im Benutzerverzeichnis eine Datei `~/.wslconfig` anlegen mit folgendem Inhalt:
-      ```
-      [wsl2]
-      networkingMode=mirrored
-      ```
-       
-
-
+      
 
 ### Configure the ubuntu shell
 
