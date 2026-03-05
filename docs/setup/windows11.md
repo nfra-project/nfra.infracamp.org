@@ -23,12 +23,7 @@ This document assumes you have your project located in drive `C:`.
 - [Running Phpstorm "in" WSL2 and starting docker containers](https://github.com/lackovic/notes/tree/master/Windows/Windows%20Subsystem%20for%20Linux#install-intellij-idea)
 
 ### Required Options in Docker for Windows
-- Open Docker for Windows settings
-    - Expose docker deamon
-        1. Go to `General` settings
-        2. To expose the docker deamon enable the marked option in the picture below
-        ![docker deamon expose](docker-deamon.png)
-    
+- Default Docker Desktop Settings should be sufficient    
 - Enable Windows WSL2 Mirrored Networking: (damit Zugriff auf localhost funktioniert)
     - `wsl --update`
     - `wsl --shutdown`
@@ -77,8 +72,8 @@ Go back to [getting started guide](../) and follow the instructions.
 
 - **Kickstart complains about `/opt` beeing empty**
 
-  This indicates, docker-daemon has no access to you local drive or
-  your `KICKSTART_WIN_PATH` is not set correctly.
+  This indicates, docker-daemon has no access to you local drive; Check if running
+  `docker run -it -v /mnt/C/path/toWorkdir:/opt ubuntu bash` works and the current path is mounted in /opt.
   
   *Solution:* Open Docker for Windows. Go to <kbd>Resources > File sharing</kbd>.
   Remove all drives and add them again. You will be asked for your password. 
